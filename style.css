@@ -1,11 +1,6 @@
-/* ============================================================
-   Hoja de vida — Dalan Javid Roa Polo
-   Diseño moderno 2026 · El índigo #1a016c se conserva como
-   color de marca · Tipografía: Space Grotesk + Inter
-   ============================================================ */
 
 :root {
-    --indigo: #1a016c;                 /* color de marca original */
+    --indigo: #1a016c;                
     --indigo-suave: #2e14a0;
     --violeta: #7c3aed;
     --fondo: #eef1fb;
@@ -39,7 +34,7 @@ body {
     overflow-x: hidden;
 }
 
-/* =============================== Hero =============================== */
+
 
 .hero {
     background: linear-gradient(135deg, var(--indigo), var(--indigo-suave) 55%, var(--violeta));
@@ -152,7 +147,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* ========================== Layout 2 columnas ========================== */
+
 
 .contenedor {
     max-width: 1100px;
@@ -172,7 +167,7 @@ body {
     min-width: 0;
 }
 
-/* =============================== Tarjetas =============================== */
+
 
 .tarjeta {
     background-color: var(--blanco);
@@ -222,7 +217,7 @@ body {
     color: var(--texto-suave);
 }
 
-/* ============================== Contacto ============================== */
+
 
 .lista-contacto,
 .lista-idiomas {
@@ -246,7 +241,7 @@ body {
     overflow-wrap: break-word;
 }
 
-/* ============================ Habilidades ============================ */
+
 
 .chips {
     list-style: none;
@@ -273,7 +268,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* =============================== Idiomas =============================== */
+
 
 .lista-idiomas li {
     display: flex;
@@ -292,7 +287,7 @@ body {
     padding: 4px 10px;
 }
 
-/* =============================== Enlaces =============================== */
+
 
 a {
     color: var(--indigo);
@@ -311,7 +306,7 @@ a:focus-visible {
     border-radius: 4px;
 }
 
-/* ===================== Animaciones de aparición ===================== */
+
 
 .js .reveal {
     opacity: 0;
@@ -332,7 +327,7 @@ a:focus-visible {
     .js .reveal { opacity: 1; transform: none; transition: none; }
 }
 
-/* ========================= Pie de página ========================= */
+
 
 .pie {
     text-align: center;
@@ -341,7 +336,7 @@ a:focus-visible {
     color: var(--texto-suave);
 }
 
-/* ====================== Responsive (móvil y tablet) ====================== */
+
 
 @media (max-width: 900px) {
     .hero {
@@ -367,7 +362,7 @@ a:focus-visible {
     }
 }
 
-/* =========================== Impresión / PDF =========================== */
+
 
 @page {
     margin: 12mm;

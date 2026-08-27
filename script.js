@@ -1,6 +1,6 @@
-/* Interactividad del CV — sin dependencias.
-   Respeta prefers-reduced-motion: con esa preferencia activa,
-   el texto aparece completo y las tarjetas se muestran sin animación. */
+/* Animaciones del CV, sin librerías.
+   Si el usuario prefiere menos movimiento (prefers-reduced-motion),
+   se muestra todo directo, sin animaciones. */
 (function () {
     "use strict";
 
@@ -8,7 +8,7 @@
     var frase = "Desarrollador Web Junior · Frontend y Backend";
     var destino = document.getElementById("rol-escrito");
 
-    // Efecto de escritura para el rol del encabezado
+    // Escribe el rol del encabezado carácter por carácter
     if (destino) {
         if (reduceMotion) {
             destino.textContent = frase;
@@ -24,7 +24,7 @@
         }
     }
 
-    // Aparición de tarjetas al hacer scroll
+    // Muestra las tarjetas cuando aparecen en pantalla
     var objetivos = document.querySelectorAll(".reveal");
 
     if (reduceMotion || !("IntersectionObserver" in window)) {
